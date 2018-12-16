@@ -1,0 +1,55 @@
+h1{
+    display: inline-block;
+    font-weight: 900;
+    font-family: 'Merriweather', serif;
+    margin-top: 5px;
+    margin-left: 0px;
+    margin-bottom: 15px; 
+    color: white;
+}
+p{
+    font-weight: 400;
+    font-family: 'Roboto', serif;
+    font-size: 13px;
+    color: white;
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+article{
+    background-size: cover;
+    margin-bottom: 25px;
+    border-radius: 4px;
+    padding: 25px;
+}
+button{
+    font-weight: 400px;
+    font-family: 'Roboto', serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 15px;
+    padding: 7px 14px;
+    border: 0px solid white;
+    background-color:rgba(236, 222, 222, 0.7);
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+button:hover{
+    background-color: rgba(236,222,222,0.85);
+}
+#contentContainer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 625px;
+    background: lightgray;
+}
+#articleOne{
+    background-image: url(./assets/žuta.jpg);
+}
+#articleTwo{
+    background-image: url(./assets/roza.jpg);
+    
+}
+#articleThree{
+    background-image: url(./assets/telefon.jpg);
+}
