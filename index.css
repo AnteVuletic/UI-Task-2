@@ -12,7 +12,7 @@ p{
     font-family: 'Roboto', serif;
     font-size: 13px;
     color: white;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     margin-top: 0px;
 }
 article{
@@ -20,21 +20,44 @@ article{
     margin-bottom: 25px;
     border-radius: 4px;
     padding: 25px;
+    padding-bottom: 15px;
 }
-button{
-    font-weight: 400px;
+.btnSection{
+    margin-left: -3px;
+}
+.parentBtn{
+    position: relative;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    display: inline-block;
+    height: 30px;
+    width: fit-content;
+    padding: 1px 15px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.backgroundBtn:hover{
+    filter: blur(90px);
+}
+.backgroundBtn{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    filter: blur(60px);
+    z-index: 0;
+}
+.contentBtn{
+    display: block;
+    font-weight: 600;
     font-family: 'Roboto', serif;
-    font-size: 14px;
+    line-height: 30px;
     color: white;
-    border-radius: 15px;
-    padding: 7px 14px;
-    border: 0px solid white;
-    background-color:rgba(236, 222, 222, 0.7);
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-button:hover{
-    background-color: rgba(236,222,222,0.85);
+    font-size: 12px;
+    z-index: 999;
 }
 #contentContainer{
     display: block;
