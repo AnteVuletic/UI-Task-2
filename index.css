@@ -26,6 +26,7 @@ article{
     margin-left: -3px;
 }
 .parentBtn{
+    background: inherit;
     position: relative;
     margin-left: 3px;
     margin-bottom: 10px;
@@ -33,31 +34,43 @@ article{
     height: 30px;
     width: fit-content;
     padding: 1px 15px;
+    border: none;
     border-radius: 30px;
     overflow: hidden;
 }
-.backgroundBtn:hover{
-    filter: blur(90px);
+@keyframes btnTransition{
+    from{
+        box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    }
+    to{
+        box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.5);
+    }
+}
+.parentBtn:hover > .backgroundBtn{
+    animation-name: btnTransition;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 .backgroundBtn{
     position: absolute;
+    background: inherit;
     display: block;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    filter: blur(60px);
-    z-index: 0;
+    box-shadow: inset 0 0 0 3000px rgba(255,255,255,0.3);
+    filter: blur(10px); 
+    top: -15%;
+    left: -15%;
+    width: 115%;
+    height: 115%; 
 }
 .contentBtn{
+    position: relative;
     display: block;
     font-weight: 600;
     font-family: 'Roboto', serif;
     line-height: 30px;
     color: white;
     font-size: 12px;
-    z-index: 999;
+    z-index: 1;
 }
 #contentContainer{
     display: block;
