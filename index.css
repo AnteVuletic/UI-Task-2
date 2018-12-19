@@ -1,10 +1,18 @@
+*{
+    border-color: rgba(0,0,0,0);
+    border-style: solid;
+    margin: 0;
+    padding: 0p;
+}
+body{
+    display: block;
+    border-width: 0px 33vw;
+}
 h1{
     display: inline-block;
     font-weight: 900;
     font-family: 'Merriweather', serif;
-    margin-top: 5px;
-    margin-left: 0px;
-    margin-bottom: 15px; 
+    border-width: 30px 0px 0px 25px;
     color: white;
 }
 p{
@@ -12,18 +20,15 @@ p{
     font-family: 'Roboto', serif;
     font-size: 13px;
     color: white;
-    margin-bottom: 30px;
-    margin-top: 0px;
+    border-width: 15px 0px 30px 25px;
 }
 article{
     background-size: cover;
-    margin-bottom: 25px;
-    border-radius: 4px;
-    padding: 25px;
-    padding-bottom: 15px;
+    border-width: 0px 0px 25px 0px;
+    border-color: silver;
 }
 .btnSection{
-    margin-left: -3px;
+    border-width: 0px 0px 10px 25px;
 }
 .parentBtn{
     background: inherit;
@@ -33,9 +38,8 @@ article{
     display: inline-block;
     height: 30px;
     width: fit-content;
-    padding: 1px 15px;
-    border: none;
-    border-radius: 30px;
+    padding: 1px 10px;
+    border-radius: 25px;
     overflow: hidden;
 }
 @keyframes btnTransition{
@@ -67,16 +71,13 @@ article{
     display: block;
     font-weight: 500;
     font-family: 'Roboto', serif;
-    line-height: 30px;
+    line-height: 15px;
     color: white;
     letter-spacing: 0.75px;
     font-size: 12px;
-    z-index: 1;
 }
 #contentContainer{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
     width: 625px;
     background: lightgray;
 }
